@@ -1,0 +1,51 @@
+\ProvidesPackage{nt}
+
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage[svgnames]{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{graphicx,float,subcaption}
+\RequirePackage{hologo,verbatim,fancyvrb,layout,multicol}
+\RequirePackage{unicode-math}
+\RequirePackage{cases}
+\RequirePackage{indentfirst}
+\RequirePackage{cancel}
+\RequirePackage{relsize}		%\mathlarger
+\RequirePackage{braket}			%Dirac notation
+\RequirePackage[force]{filehook} % Fixes an error
+\RequirePackage{libertinus}
+\RequirePackage[UTF8, scheme=plain, punct=plain, zihao=false]{ctex}
+\setCJKmainfont[
+    Scale = 0.7,
+	Mapping=fullwidth-stop,
+    UprightFont = * ,       % 默认 Regular
+    BoldFont = * Bold,
+    ItalicFont = * ,        % 中文没有 italic，指向 Regular
+    BoldItalicFont = * Bold
+]{Noto Serif CJK SC}
+\setCJKsansfont[
+    Scale = 0.7,
+    UprightFont = * ,
+    BoldFont = * Bold,
+    ItalicFont = * ,
+    BoldItalicFont = * Bold
+]{Noto Sans CJK SC}
+\setCJKmonofont[
+    Scale = 0.7,
+    UprightFont = * ,
+    BoldFont = * Bold,
+    ItalicFont = * ,
+    BoldItalicFont = * Bold
+]{Noto Sans Mono CJK SC}
+\AtBeginDocument{
+    \newcommand*{\eu}{\mathrm{e}}
+    \newcommand*{\ramuno}{\mathrm{i}}
+    \newcommand*{\dbar}{\mathrm{đ}}
+    % \newcommand*{\dif}{\mathrm{d}}
+    \newcommand*{\dif}{\mathop{}\!\mathrm{d}}
+    \newcommand{\bm}[1]{\symbfit{#1}}
+    \renewcommand*{\varPi}{\symit{\Pi}}
+    \renewcommand*{\varPhi}{\symit{\Phi}}
+    \renewcommand*{\varLambda}{\symit{\Lambda}}
+    \renewcommand*{\varTheta}{\symit{\Theta}}
+}

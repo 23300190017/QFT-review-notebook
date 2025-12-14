@@ -1,0 +1,1 @@
+xelatex -interaction=nostopmode -synctex=1 main

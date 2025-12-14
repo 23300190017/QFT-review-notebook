@@ -1,0 +1,34 @@
+\documentclass[8pt,twocolumn]{extarticle}
+\usepackage{nt}
+\usepackage[left=0.8cm, right = 0.8cm, top = 0.8cm, bottom = 0.8cm]{geometry}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{titlesec}
+\usepackage{parskip}
+
+% Compact title spacing
+\titlespacing*{\section}{0pt}{0.5em}{0.2em}
+\titlespacing*{\subsection}{0pt}{0.3em}{0.1em}
+
+% Custom command for definitions to avoid itemize/enumerate
+% Usage: \concept{Term}{Definition/Explanation}
+\newcommand{\concept}[2]{\noindent \textbf{#1}: #2}
+\AtBeginDocument{
+    \setlength{\abovedisplayskip}{0pt}
+    \setlength{\belowdisplayskip}{0pt}
+    \setlength{\abovedisplayshortskip}{0pt}
+    \setlength{\belowdisplayshortskip}{0pt}
+}
+\newcommand{\nsection}[1]{{\hspace{1em}\large\textbf{#1}}\par}
+\newcommand{\subnsection}[1]{{\hspace{2em}\large\textbf{#1}}\par}
+\renewcommand*{\baselinestretch}{0.85}%行间距
+% \begin{document}\begin{multicols}{2}
+%     \begin{equation}
+%         S = - mc\int \dif \lambda\, \sqrt{\frac{\dif x_\mu}{\dif \lambda} \frac{\dif x^\mu}{\dif \lambda}}
+%     \end{equation}
+% \end{multicols}\end{document}
+
+\begin{document}
+    \input{chap/1.tex}
+    \input{chap/2.tex}
+\end{document}
